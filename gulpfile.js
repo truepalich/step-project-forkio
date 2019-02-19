@@ -9,8 +9,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify-es').default;
 const cleanCSS = require('gulp-clean-css');
 const clean = require('gulp-clean');
-const cleanDest = require('gulp-clean-dest');
 const autoprefixer = require('gulp-autoprefixer');
+const runSequence = require('run-sequence');
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/*.scss')
@@ -55,7 +55,9 @@ gulp.task('dev', ['sass', 'uglify'], function() {
     gulp.watch('index.html').on('change', browserSync.reload);
 });
 
-gulp.task('build', ['cleanDist', 'sass', 'uglify']);
+gulp.task('build', function() {
+    runSequence('cleanDist', 'sass', 'uglify');
+});
 
 
 
