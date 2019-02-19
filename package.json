@@ -1,0 +1,32 @@
+{
+  "name": "step-project-forkio",
+  "version": "1.0.0",
+  "description": "Final project of second module for Dan IT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/truepalich/step-project-forkio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/truepalich/step-project-forkio/issues"
+  },
+  "homepage": "https://github.com/truepalich/step-project-forkio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}
