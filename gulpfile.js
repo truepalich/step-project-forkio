@@ -11,6 +11,7 @@ const cleanCSS = require('gulp-clean-css');
 const clean = require('gulp-clean');
 const autoprefixer = require('gulp-autoprefixer');
 const runSequence = require('run-sequence');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/*.scss')
@@ -33,112 +34,33 @@ gulp.task("uglify", function () {
         .pipe(rename("script.min.js"))
         .pipe(sourcemaps.init())
         .pipe(uglify())
-        .pipe(sourcemaps.write()) // Inline source maps.
-        // For external source map file:
-        //.pipe(sourcemaps.write("./maps")) // In this case: lib/maps/bundle.min.js.map
-        .pipe(gulp.dest("dist/js"));
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('optimizeImages', function() {
+    gulp.src('src/img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'))
 });
 
 gulp.task('cleanDist', function () {
     gulp.src('dist', {read: false})
         .pipe(clean())
-})
+});
 
-gulp.task('dev', ['sass', 'uglify'], function() {
+gulp.task('dev', ['sass', 'uglify', 'optimizeImages'], function() {
     browserSync.init({
         server: {
             baseDir: "./"
         }
     })
-    gulp.watch('src/js/*.js', ['uglify']).on('change', browserSync.reload);
-    gulp.watch('src/scss/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('src/img/**/*', ['optimizeImg']);
+    gulp.watch('src/js/*.js', ['uglify']);
+    gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('index.html').on('change', browserSync.reload);
 });
 
 gulp.task('build', function() {
-    runSequence('cleanDist', 'sass', 'uglify');
+    runSequence('cleanDist', 'sass', 'uglify', 'optimizeImages');
 });
-
-
-
-
-// 'use strict';
-//
-// let gulp = require('gulp'); // podkluchaem modul gulp
-// let uglify = require('gulp-uglify'); //gulp-uglify-es
-// let browserSync = require('browser-sync').create();
-// let sass = require('gulp-sass');
-// let concat = require('gulp-concat');
-// let rename = require('gulp-rename');
-// let imagemin = require('gulp-imagemin');
-// let pngquant = require('imagemin-pngquant');
-// let sourcemaps = require('gulp-sourcemaps');
-// let autoprefixer = require('gulp-autoprefixer');
-//
-//
-// gulp.task('pushImgs', function () {
-//     gulp.src('src/images/**/*')  // berem vse imgs
-//         .pipe(imagemin({
-//             interlaced: true,
-//             progressive: true,
-//             optimizationLevel: 5,
-//             svgoPlugins: [
-//                 {
-//                     removeViewBox: true
-//                 }
-//             ],
-//             use: [pngquant()]
-//         }))
-//         .pipe(gulp.dest('dist/images'))
-// })
-//
-//
-// gulp.task('clean', function () {
-//     gulp.src('dist', {read: false})
-//         .pipe(clean())
-// })
-//
-// gulp.task('serve', ['sass', 'uglify'], function () {
-//     browserSync.init({
-//         server: './'
-//     })
-//
-//     gulp.watch('src/js/*.js', ['uglify']);
-//     gulp.watch('src/scss/*.scss', ['sass']);
-//     gulp.watch('index.html').on('change', browserSync.reload);
-// });
-//
-// gulp.task('sass', function () {
-//     return gulp.src('src/scss/*.scss')
-//         .pipe(sourcemaps.init())
-//         .pipe(autoprefixer({
-//             browsers: ['last 2 versions'],
-//             cascade: false
-//         }))
-//         .pipe(sass())
-//         .pipe(gulp.dest('dist/css'))
-// });
-//
-// gulp.task('hello', function () {
-//     console.log('Hello');
-// });
-//
-// gulp.task('second', function () {
-//     console.log('second');
-// });
-//
-// // gulp.task('dist', gulp.parallel(['hello', 'second'], () => {
-// //     console.log('==========FIN=========')
-// //     return
-// // }))
-//
-// gulp.task('uglify', function () {
-//     gulp.src('src/js/*.js') // vozmi vse js
-//     // .pipe(concat('bundle.js'))
-//     // .pipe(gulp.dest('dist'))
-//         .pipe(uglify()) // primeni uglyfi
-//         // .pipe(rename('bundle.min.js'))
-//         .pipe(gulp.dest('dist')) //zapiwi vse v dist
-// })
-//
-// // gulp.task('default', ['uglify']);
