@@ -1,2 +1,2 @@
-let hello = 'Hello';
-let world = 'World';
+//Ruslan js will be here
+console.log('Ruslan js will be here');
