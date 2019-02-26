@@ -1,4 +1,4 @@
 .settings/*
 .idea/*
 node_modules
-dist
+dist/*
