@@ -1,1 +1,103 @@
 /*Stas styles will be here*/
+.wrap-box {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+footer {
+  padding: 60px 0;
+
+  .wrap-box {
+    display: flex;
+  }
+  .common-footer-box {
+    width: 25%;
+  }
+
+  .footer-box-about {
+    .footer-box-about__title {
+      margin: 0 0 25px 0;
+      color: #333;
+      text-transform: uppercase;
+      font-size: 24px;
+
+      .footer-box-about__io {
+        color: #8d81ac;
+      }
+    }
+    .footer-box-about__desc {
+      margin: 0;
+      line-height: 20px;
+    }
+  }
+
+  .footer-box-nav {
+    .footer-box-nav__title {
+      color: #323232;
+      font-size: 16px;
+      margin: 0 0 25px 0;
+    }
+
+    .footer-box-nav__list {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+
+      .footer-box-nav__list__item {
+        margin-bottom: 12px;
+
+        .footer-box-nav__list__li__link {
+          text-decoration: none;
+          color: #8d81ac;
+          &:hover {
+            color: #564978;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-box-info {
+    .footer-box-info__title {
+      color: #323232;
+      font-size: 16px;
+      margin: 0 0 25px 0;
+    }
+    .footer-box-info__desc {
+      margin: 0;
+      line-height: 20px;
+    }
+  }
+
+  .footer-box-contact {
+    .footer-box-contact__phone {
+      margin-bottom: 35px;
+
+      .footer-box-contact__phone__numbers {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 0 0 10px 0;
+        color: #3f3f3f;
+      }
+      .footer-box-contact__phone__time {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #848e97;
+        margin: 0;
+      }
+    }
+    .footer-box-contact__address {
+      .footer-box-contact__address__city {
+        font-size: 16px;
+        color: #323232;
+        margin: 0 0 10px 0;
+      }
+      .footer-box-contact__address__location {
+        margin: 0;
+        line-height: 20px;
+      }
+    }
+  }
+
+}
+
