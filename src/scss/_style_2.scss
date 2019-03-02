@@ -1,19 +1,80 @@
-/*Stas styles will be here*/
+/*Global Styles*/
 .wrap-box {
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1200px;
 }
+.common-padding {
+  padding: 0 10px;
+}
+/*Global Styles*/
 
-footer {
-  padding: 60px 0;
+/*Callback-section Styles*/
+.callback-section {
+  /*padding: 45px;*/
+  background-color: #f4f4f4;
 
-  .wrap-box {
+  .callback-box {
+    /*
     display: flex;
-  }
-  .common-footer-box {
-    width: 25%;
-  }
+    justify-content: space-between;
+    align-items: center;
+*/
 
+    .callback-box__title {
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+      color: #635c73;
+    }
+    .callback-box__form {
+      /*
+      display: flex;
+      width: 75%;
+      justify-content: flex-end;
+      */
+
+      .callback-box__form__field {
+        /*box-sizing: content-box;*/
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 42px;
+        line-height: 42px;
+        color: #c8cbcf;
+        background: #fff;
+        border-radius: 42px;
+
+        /*
+        max-width: 335px;
+        width: 100%;
+        */
+        font-size: 14px;
+        text-indent: 25px;
+      }
+
+      .callback-box__form__button {
+        //box-sizing: content-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        height: 42px;
+        line-height: 42px;
+        color: #fff;
+        background: #8d81ac;
+        border-radius: 42px;
+        font-size: 13px;
+        text-transform: uppercase;
+        max-width: 140px;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+/*Callback-section Styles*/
+
+/*Footer Styles*/
+footer {
   .footer-box-about {
     .footer-box-about__title {
       margin: 0 0 25px 0;
@@ -99,80 +160,173 @@ footer {
     }
   }
 }
+/*Footer Styles*/
 
 
 
 
+@media (max-width: 400px) {
+  /*Global Styles*/
+  .phone-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+  /*Global Styles*/
 
-
-
-
-
-
-.callback-section {
-  padding: 45px;
-  background-color: #f4f4f4;
-
-  .callback-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .callback-box__title {
-      font-size: 30px;
-      font-weight: bold;
-      margin: 0;
-      padding: 0;
-      color: #635c73;
+  /*Callback-section Styles*/
+  .callback-section {
+    .wrap-box {
+      padding: 35px 0;
     }
-    .callback-box__form {
-      display: flex;
-      width: 75%;
-      justify-content: flex-end;
-
-      .callback-box__form__field {
-        //box-sizing: content-box;
-        margin: 0 9px;
-        padding: 0;
-        border: 0;
-        height: 42px;
-        line-height: 42px;
-        color: #c8cbcf;
-        background: #fff;
-        border-radius: 42px;
-        max-width: 335px;
-        width: 100%;
-        font-size: 14px;
-        text-indent: 25px;
+    .callback-box {
+      .callback-box__title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 25px;
       }
-
-      .callback-box__form__button {
-        //box-sizing: content-box;
-        margin: 0 0 0 9px;
-        padding: 0;
-        border: 0;
-        height: 42px;
-        line-height: 42px;
-        color: #fff;
-        background: #8d81ac;
-        border-radius: 42px;
-        font-size: 13px;
-        text-transform: uppercase;
-        max-width: 140px;
-        width: 100%;
-        cursor: pointer;
+      .callback-box__form {
+        text-align: center;
+        .callback-box__form__field {
+          width: 100%;
+          margin-bottom: 15px;
+        }
       }
     }
   }
+  /*Callback-section Styles*/
+
+  /*Footer Styles*/
+  footer {
+    .wrap-box {
+      padding: 0 0 40px;
+    }
+
+    .common-footer-box {
+      padding-top: 40px;
+    }
+  }
+  /*Footer Styles*/
 }
 
-@media (max-width: 758px) {
-  .callback-section {
-    padding: 25px;
+@media (min-width: 401px) and (max-width: 480px) {
+  /*Global Styles*/
+  .phone-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+  /*Global Styles*/
 
+  /*Callback-section Styles*/
+  .callback-section {
+    .wrap-box {
+      padding: 50px 0;
+    }
     .callback-box {
-      flex-direction: column;
+      .callback-box__title {
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 40px;
+
+        br {
+          display: none;
+        }
+      }
+      .callback-box__form {
+        text-align: center;
+        .callback-box__form__field {
+          width: 290px;
+          margin: 0 auto 15px;
+          display: block;
+        }
+      }
     }
   }
+  /*Callback-section Styles*/
+
+  /*Footer Styles*/
+  footer {
+    .wrap-box {
+      padding: 0px 0px 40px;
+    }
+
+    .common-footer-box {
+      padding-top: 40px;
+    }
+
+    .footer-box-about {
+      .footer-box-about__title {
+        background: url("/dist/img/footer_logo.png") no-repeat left center;
+        padding: 10px 0 10px 60px;
+      }
+    }
+  }
+  /*Footer Styles*/
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+  /*Footer Styles*/
+  footer {
+    .wrap-box {
+      padding: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .common-footer-box {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 20px 10px;
+    }
+
+    .footer-box-about {
+      .footer-box-about__title {
+        background: url("/dist/img/footer_logo.png") no-repeat left center;
+        padding: 10px 0 10px 60px;
+      }
+    }
+  }
+  /*Footer Styles*/
+}
+
+@media (min-width: 993px) {
+  /*Footer Styles*/
+  footer {
+    .wrap-box {
+      padding: 60px 0;
+      display: flex;
+    }
+
+    .footer-box-about {
+      .footer-box-about__title {
+        background: url("/dist/img/footer_logo.png") no-repeat left center;
+        padding: 10px 0 10px 60px;
+      }
+    }
+
+    .footer-box-about {
+      width: 35%;
+      padding-right: 5%;
+      box-sizing: border-box;
+    }
+
+    .footer-box-nav {
+      width: 15%;
+    }
+
+    .footer-box-contact {
+      width: 25%;
+    }
+
+    .footer-box-info {
+      width: 25%;
+    }
+  }
+  /*Footer Styles*/
 }
 
