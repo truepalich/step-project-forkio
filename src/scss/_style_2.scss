@@ -8,6 +8,35 @@
 }
 /*Global Styles*/
 
+.reviews-section {
+  .wrap-box {
+    max-width: 950px;
+
+    .slider {
+      max-width: 800px;
+      margin: 0px auto;
+
+      .slick-prev:before {
+        background: url("/dist/img/prev_icon.png") no-repeat center center;
+        color: transparent;
+      }
+      .slick-next:before {
+        background: url("/dist/img/next_icon.png") no-repeat center center;
+        color: transparent;
+      }
+
+      .slick-prev {
+        left: -70px;
+      }
+
+      .slick-next {
+        right: -70px;
+      }
+    }
+  }
+}
+
+
 /*Callback-section Styles*/
 .callback-section {
   background-color: #f4f4f4;
@@ -381,4 +410,3 @@ footer {
   }
   /*Footer Styles*/
 }
-
