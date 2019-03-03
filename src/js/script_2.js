@@ -1,2 +1,3 @@
-//Stas js will be here
-console.log('Stas js will be here');
+$(document).on('ready', function() {
+    $('.js-slider').slick();
+});
