@@ -1,6 +1,81 @@
 /*Ruslan styles will be here*/
 
+//media (max-width: 321px;)
 .header {
     background-color: #27262a;
     display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+.menu {
+    display: none;
+}
+
+.logo__text {
+    display: none;
+}
+
+.logo {
+    width: 20%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.btn {
+    width: 55%;
+    text-align: center;
+}
+
+.btn__item {
+    border: 1px;
+    border-radius: 20px;
+    border-color: #8d81ac;
+    width: 115px;
+    height: 40px;
+    background-color: #8d81ac;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hamburger {
+    width: 20%;
+    text-align: center;
+}
+
+.revolutionary_editor {
+    height: 718px;
+    background: url(../img/header_background_320.png) 100% 100% no-repeat;
+}
+
+.revolutionary_editor {
+    text-align: center;
+}
+
+.revolutionary_editor__fork_app {
+    margin: 0px 0px 0px 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.revolutionary_editor__text {
+    color: #8d81ac;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.revolutionary_editor__textForMac {
+    color: #848e97;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
 }
