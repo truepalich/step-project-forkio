@@ -1,5 +1,5 @@
 //Ruslan js will be here
-let btn = document.querySelector('.burger');
+let btn = document.querySelector('.hamburger');
 let menu = document.querySelector('.menu');
 let active = false;
 btn.addEventListener('click', () => {
