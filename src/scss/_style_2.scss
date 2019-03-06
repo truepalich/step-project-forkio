@@ -8,6 +8,69 @@
 }
 /*Global Styles*/
 
+/*Feature Section Styles*/
+.features-section {
+  background-color: #f4f4f4;
+  position: relative;
+
+  .wrap-box {
+    /*padding: 85px 0 40px;*/
+    display: flex;
+
+    .feature-box {
+      /*width: 50%;*/
+      .feature-box__title {
+        font-weight: bold;
+        color: #8d81ac;
+        margin: 0;
+        padding: 0;
+      }
+
+      .feature-box__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        .feature-box__list__item {
+          display: flex;
+          margin-bottom: 30px;
+
+          .feature-box__list__item__icon {
+            /*width: 25%;*/
+            display: flex;
+            justify-content: center;
+            align-items: start;
+          }
+          .feature-box__list__item__info {
+            /*width: 75%;*/
+
+            .feature-box__list__item__info__title {
+              margin: 0px;
+              font-size: 16px;
+              color: #323232;
+            }
+
+            .feature-box__list__item__info__desc {
+              margin: 16px 0 0;
+              line-height: 20px;
+            }
+
+          }
+        }
+      }
+    }
+    .feature-promo {
+      /*
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 620px;
+      */
+    }
+  }
+}
+/*Feature Section Styles*/
+
 /*Reviews-section Styles*/
 .reviews-section {
   .wrap-box {
@@ -263,6 +326,52 @@ footer {
   }
   /*Global Styles*/
 
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      padding: 35px 0 20px;
+      flex-direction: column;
+
+      .feature-box {
+        .feature-box__title {
+          font-size: 32px;
+          margin-bottom: 30px;
+        }
+
+        text-align: center;
+        .feature-box__list {
+          .feature-box__list__item {
+            flex-direction: column;
+            .feature-box__list__item__icon {
+            }
+            .feature-box__list__item__info {
+              margin-top: 20px;
+              .feature-box__list__item__info__title {
+              }
+              .feature-box__list__item__info__desc {
+              }
+            }
+          }
+        }
+      }
+
+      .feature-promo {
+        position: relative;
+        min-height: 230px;
+
+        .feature-promo__image {
+          position: absolute;
+          right: -10px;
+          width: 310px;
+          top: 0;
+        }
+
+      }
+    }
+  }
+  /*Feature Section Styles*/
+
+
   /*Reviews-section Styles*/
   .reviews-section {
     .wrap-box {
@@ -347,6 +456,53 @@ footer {
   }
   /*Global Styles*/
 
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      padding: 50px 0 40px;
+      flex-direction: column;
+
+      .feature-box {
+        .feature-box__title {
+          font-size: 42px;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+
+        .feature-box__list {
+          .feature-box__list__item {
+            flex-direction: row;
+            .feature-box__list__item__icon {
+              width: 35%;
+            }
+            .feature-box__list__item__info {
+              width: 65%;
+              .feature-box__list__item__info__title {
+              }
+              .feature-box__list__item__info__desc {
+              }
+            }
+          }
+        }
+      }
+
+      .feature-promo {
+        position: relative;
+        min-height: 290px;
+
+        .feature-promo__image {
+          position: absolute;
+          right: -10px;
+          width: 400px;
+          top: 0;
+        }
+
+      }
+    }
+  }
+  /*Feature Section Styles*/
+
   /*Reviews-section Styles*/
   .reviews-section {
     .wrap-box {
@@ -421,6 +577,8 @@ footer {
   /*Footer Styles*/
 }
 
+
+
 @media (min-width: 481px) and (max-width: 992px) {
   /*Global Styles*/
   .phone-view {
@@ -430,6 +588,57 @@ footer {
     display: block;
   }
   /*Global Styles*/
+
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      padding: 50px 0 40px;
+      flex-direction: column;
+
+      .feature-box {
+        .feature-box__title {
+          font-size: 42px;
+          margin-bottom: 50px;
+          text-align: center;
+          display: block;
+        }
+
+        .feature-box__list {
+          .feature-box__list__item {
+            flex-direction: row;
+            .feature-box__list__item__icon {
+              width: 25%;
+            }
+            .feature-box__list__item__info {
+              width: 75%;
+              .feature-box__list__item__info__title {
+              }
+              .feature-box__list__item__info__desc {
+              }
+            }
+          }
+        }
+      }
+
+      .feature-promo {
+        position: relative;
+        min-height: 520px;
+
+        .feature-promo__title {
+          display: none;
+        }
+
+        .feature-promo__image {
+          position: absolute;
+          right: -10px;
+          width: 700px;
+          top: 0;
+        }
+
+      }
+    }
+  }
+  /*Feature Section Styles*/
 
   /*Reviews-section Styles*/
   .reviews-section {
@@ -519,6 +728,27 @@ footer {
   /*Footer Styles*/
 }
 
+
+@media (min-width: 481px) and (max-width: 700px) {
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      .feature-promo {
+        position: relative;
+        min-height: 350px;
+
+        .feature-promo__image {
+          position: absolute;
+          right: -10px;
+          width: 470px;
+          top: 0;
+        }
+      }
+    }
+  }
+  /*Feature Section Styles*/
+}
+
 @media (min-width: 993px) {
   /*Global Styles*/
   .phone-view {
@@ -528,6 +758,54 @@ footer {
     display: block;
   }
   /*Global Styles*/
+
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      padding: 85px 0 40px;
+      flex-direction: row;
+
+      .feature-box {
+        width: 50%;
+
+        .feature-box__title {
+          font-size: 42px;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+        .feature-box__list {
+          .feature-box__list__item {
+            flex-direction: row;
+            .feature-box__list__item__icon {
+              width: 25%;
+            }
+            .feature-box__list__item__info {
+              width: 75%;
+              .feature-box__list__item__info__title {
+              }
+              .feature-box__list__item__info__desc {
+              }
+            }
+          }
+        }
+      }
+
+      .feature-promo {
+        min-height: 520px;
+        width: 50%;
+
+        .feature-promo__image {
+          position: absolute;
+          right: 0px;
+          width: 700px;
+          top: 0;
+        }
+
+      }
+    }
+  }
+  /*Feature Section Styles*/
 
   /*Reviews-section Styles*/
   .reviews-section {
