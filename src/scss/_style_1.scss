@@ -117,10 +117,11 @@
 }
 
 .talking_about_fork {
-    height: 1144px;
-    background-color: #4b3b4e;
     background: url(../img/talking_about_fork_background_320.png) 100% 100% no-repeat;
+    background-position-y: 8%;
+    background-color: #4b3b4e;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .talking_about_fork__name {
@@ -129,7 +130,20 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 600;
-    padding-top: 40px;
-    padding-bottom: 10px;
-    line-height: 120%
+    line-height: 130%;
+    padding-top: 30px;
+}
+
+.talking_about_fork__logo_company {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.talking_about_fork__text {
+    width: 245px;
+    margin: 0px auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 120%;
 }
