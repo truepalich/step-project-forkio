@@ -38,15 +38,15 @@
           border-radius: 4px;
 
           &.social-nav__item__link__github {
-            background-color: #f3f3f3;
+            background: #f3f3f3 url("/dist/img/github_icon.png") no-repeat 20px center;
             color: #000;
           }
           &.social-nav__item__link__twitter {
-            background-color: #26a6d1;
+            background: #26a6d1 url("/dist/img/twitter_icon.png") no-repeat 20px center;
             color: #fff;
           }
           &.social-nav__item__link__facebook {
-            background-color: #3b5998;
+            background: #3b5998 url("/dist/img/facebook_icon.png") no-repeat 20px center;
             color: #fff;
           }
         }
