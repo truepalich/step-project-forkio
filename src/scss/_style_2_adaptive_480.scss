@@ -1,0 +1,130 @@
+@media (min-width: 401px) and (max-width: 480px) {
+  /*Global Styles*/
+  .phone-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+  /*Global Styles*/
+
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      padding: 50px 0 40px;
+      flex-direction: column;
+
+      .feature-box {
+        .feature-box__title {
+          font-size: 42px;
+          margin-bottom: 50px;
+          text-align: center;
+        }
+
+
+        .feature-box__list {
+          .feature-box__list__item {
+            flex-direction: row;
+            .feature-box__list__item__icon {
+              width: 35%;
+            }
+            .feature-box__list__item__info {
+              width: 65%;
+              .feature-box__list__item__info__title {
+              }
+              .feature-box__list__item__info__desc {
+              }
+            }
+          }
+        }
+      }
+
+      .feature-promo {
+        position: relative;
+        min-height: 290px;
+
+        .feature-promo__image {
+          position: absolute;
+          right: -10px;
+          width: 400px;
+          top: 0;
+        }
+
+      }
+    }
+  }
+  /*Feature Section Styles*/
+
+  /*Reviews-section Styles*/
+  .reviews-section {
+    .wrap-box {
+      .social-nav {
+        flex-direction: column;
+        margin-top: 5px;
+
+        .social-nav__item {
+          padding-top: 30px;
+          width: 280px;
+        }
+      }
+
+      .slider {
+        .slick-next {
+          right: 0;
+        }
+        .slick-prev {
+          left: 0;
+        }
+      }
+
+    }
+  }
+  /*Reviews-section Styles*/
+
+  /*Callback-section Styles*/
+  .callback-section {
+    .wrap-box {
+      padding: 50px 0;
+    }
+    .callback-box {
+      .callback-box__title {
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 40px;
+
+        br {
+          display: none;
+        }
+      }
+      .callback-box__form {
+        text-align: center;
+        .callback-box__form__field {
+          width: 290px;
+          margin: 0 auto 15px;
+          display: block;
+        }
+      }
+    }
+  }
+  /*Callback-section Styles*/
+
+  /*Footer Styles*/
+  footer {
+    .wrap-box {
+      padding: 0px 0px 40px;
+    }
+
+    .common-footer-box {
+      padding-top: 40px;
+    }
+
+    .footer-box-about {
+      .footer-box-about__title {
+        background: url("/dist/img/footer_logo.png") no-repeat left center;
+        padding: 10px 0 10px 60px;
+      }
+    }
+  }
+  /*Footer Styles*/
+}

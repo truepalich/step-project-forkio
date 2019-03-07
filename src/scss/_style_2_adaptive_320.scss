@@ -1,0 +1,128 @@
+@media (max-width: 400px) {
+  /*Global Styles*/
+  .phone-view {
+    display: block;
+  }
+  .desktop-view {
+    display: none;
+  }
+  /*Global Styles*/
+
+  /*Feature Section Styles*/
+  .features-section {
+    .wrap-box {
+      padding: 35px 0 20px;
+      flex-direction: column;
+
+      .feature-box {
+        .feature-box__title {
+          font-size: 32px;
+          margin-bottom: 30px;
+        }
+
+        text-align: center;
+        .feature-box__list {
+          .feature-box__list__item {
+            flex-direction: column;
+            .feature-box__list__item__icon {
+            }
+            .feature-box__list__item__info {
+              margin-top: 20px;
+              .feature-box__list__item__info__title {
+              }
+              .feature-box__list__item__info__desc {
+              }
+            }
+          }
+        }
+      }
+
+      .feature-promo {
+        position: relative;
+        min-height: 230px;
+
+        .feature-promo__image {
+          position: absolute;
+          right: -10px;
+          width: 310px;
+          top: 0;
+        }
+      }
+    }
+  }
+  /*Feature Section Styles*/
+
+
+  /*Reviews-section Styles*/
+  .reviews-section {
+    .wrap-box {
+      .social-nav {
+        flex-direction: column;
+
+        .social-nav__item {
+          padding-top: 30px;
+          width: 280px;
+        }
+      }
+
+      .slider {
+        .slider-item {
+          .slider-item__title {
+            flex-direction: column;
+            text-align: center;
+
+            .slider-item__name {
+              margin: 15px auto 0;
+            }
+          }
+          .slider-item__date {
+            margin-top: 0;
+          }
+        }
+        .slick-next {
+          right: 0;
+        }
+        .slick-prev {
+          left: 0;
+        }
+      }
+
+    }
+  }
+  /*Reviews-section Styles*/
+
+  /*Callback-section Styles*/
+  .callback-section {
+    .wrap-box {
+      padding: 35px 0;
+    }
+    .callback-box {
+      .callback-box__title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 25px;
+      }
+      .callback-box__form {
+        text-align: center;
+        .callback-box__form__field {
+          width: 100%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  /*Callback-section Styles*/
+
+  /*Footer Styles*/
+  footer {
+    .wrap-box {
+      padding: 0 0 40px;
+    }
+
+    .common-footer-box {
+      padding-top: 40px;
+    }
+  }
+  /*Footer Styles*/
+}

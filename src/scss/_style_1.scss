@@ -1,0 +1,149 @@
+/*Ruslan styles will be here*/
+
+//media (max-width: 321px;)
+.header {
+    background-color: #27262a;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+.menu {
+    display: none;
+}
+
+.logo__text {
+    display: none;
+}
+
+.logo {
+    width: 20%;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.btn {
+    width: 55%;
+    text-align: center;
+}
+
+.btn__item {
+    border: 1px;
+    border-radius: 20px;
+    border-color: #8d81ac;
+    width: 115px;
+    height: 40px;
+    background-color: #8d81ac;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.hamburger {
+    width: 20%;
+    text-align: center;
+}
+
+.header_fork_app {
+    height: 718px;
+    background: url(../img/header_background_320.png) 100% 100% no-repeat;
+    text-align: center;
+}
+
+.header_fork_app__name {
+    margin: 0px 0px 0px 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.header_fork_app__text {
+    color: #8d81ac;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header_fork_app__textForMac {
+    color: #848e97;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.revolutionary_button {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.revolutionary_button__item {
+    border: 1px;
+    border-radius: 20px;
+    border-color: #8d81ac;
+    width: 290px;
+    height: 40px;
+    background-color: #8d81ac;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.revolutionary_button__trial_version {
+    color: #848e97;
+}
+
+.revolutionary_editor__name {
+    color: #635c73;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.revolutionary_editor__text {
+    width: 265px;
+    margin: 0px auto;
+    text-align: center;
+    color: #6d6d6d;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.talking_about_fork {
+    background: url(../img/talking_about_fork_background_320.png) 100% 100% no-repeat;
+    background-position-y: 8%;
+    background-color: #4b3b4e;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.talking_about_fork__name {
+    margin: 0px 0px 0px 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%;
+    padding-top: 30px;
+}
+
+.talking_about_fork__logo_company {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.talking_about_fork__text {
+    width: 245px;
+    margin: 0px auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 120%;
+}
