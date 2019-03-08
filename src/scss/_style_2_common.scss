@@ -92,15 +92,15 @@ $secondary-color: #635c73;
           border-radius: 4px;
 
           &.social-nav__item__link__github {
-            background: #f3f3f3 url("/dist/img/github_icon.png") no-repeat 20px center;
+            background: #f3f3f3 url("../img/github_icon.png") no-repeat 20px center;
             color: #000;
           }
           &.social-nav__item__link__twitter {
-            background: #26a6d1 url("/dist/img/twitter_icon.png") no-repeat 20px center;
+            background: #26a6d1 url("../img/twitter_icon.png") no-repeat 20px center;
             color: #fff;
           }
           &.social-nav__item__link__facebook {
-            background: #3b5998 url("/dist/img/facebook_icon.png") no-repeat 20px center;
+            background: #3b5998 url("../img/facebook_icon.png") no-repeat 20px center;
             color: #fff;
           }
         }
@@ -159,11 +159,11 @@ $secondary-color: #635c73;
       }
 
       .slick-prev:before {
-        background: url("/dist/img/prev_icon.png") no-repeat center center;
+        background: url("../img/prev_icon.png") no-repeat center center;
         color: transparent;
       }
       .slick-next:before {
-        background: url("/dist/img/next_icon.png") no-repeat center center;
+        background: url("../img/next_icon.png") no-repeat center center;
         color: transparent;
       }
 
