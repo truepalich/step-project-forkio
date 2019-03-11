@@ -83,9 +83,8 @@
 }
 
 .revolutionary_button__item {
-    border: 1px;
+    border: 1px solid #8d81ac;
     border-radius: 20px;
-    border-color: #8d81ac;
     width: 290px;
     height: 40px;
     background-color: #8d81ac;
@@ -122,6 +121,7 @@
     background-color: #4b3b4e;
     text-align: center;
     padding-bottom: 40px;
+    border-bottom: 2px solid #645766;
 }
 
 .talking_about_fork__name {
@@ -147,3 +147,102 @@
     font-family: 'Montserrat', sans-serif;
     line-height: 120%;
 }
+
+.fork_pricing {
+    background-color: #4b3b4e;
+    text-align: center;
+    flex-direction: column;
+    padding-bottom: 90px;
+}
+
+.fork_pricing__name {
+    margin: 0px auto;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 130%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.fork_pricing__plan {
+    width: 255px;
+    height: 455px;
+    margin: 20px auto;
+}
+
+.plan_item__name {
+    line-height: 100px;
+    margin: 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    background-color: #685b6a;
+}
+
+.plan_item__price {
+    background-color: #5f5161;
+    width: 255px;
+    height: 355px;
+    position: relative;
+}
+
+.price__cost {
+    margin: 0px;
+    padding: 30px 0px 35px 0px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+.price__sing_dol {
+    font-weight: 300;
+}
+
+.price__per_month {
+    margin: 0px;
+    color: #7c707e;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.price__line {
+    background: #8d81ac;
+    width: 60px;
+    height: 4px;
+    margin: 30px auto;
+}
+
+.price__offer {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.price__btn_purchase {
+    position: absolute;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    background: #776b79;
+    width: 155px;
+    height: 40px;
+    border: 1px solid #776b79;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 30px;
+}
+
+.fork_pricing__active {}
