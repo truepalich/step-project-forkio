@@ -1,435 +1,721 @@
- /*Ruslan styles will be here*/
- 
- $general_font: 'Montserrat',
- sans-serif;
- @media screen and (max-width: 320px) {
-     .logo__text {
-         display: none;
-     }
-     .menu {
-         display: none;
-     }
-     .header_fork_app {
-         height: 717px;
-         background: url(../img/header_background_320.png) 100% 100% no-repeat;
-         .header_fork_app__name {
-             font-size: 48px;
-             padding-top: 40px;
-             padding-bottom: 10px;
-         }
-         .header_fork_app__text {
-             font-size: 18px;
-         }
-         .header_fork_app__textForMac {
-             font-size: 14px;
-         }
-         .revolutionary_button {
-             .revolutionary_button__item {
-                 border-radius: 20px;
-                 width: 90%;
-                 height: 40px;
-                 font-size: 15px;
-             }
-         }
-     }
-     .revolutionary_editor__name {
-         padding-top: 100px;
-         font-size: 26px;
-     }
-     .revolutionary_editor__text {
-         width: 83%;
-         font-size: 14px;
-     }
-     .talking_about_fork {
-         background: url(../img/talking_about_fork_background_320.png) 100% 100% no-repeat;
-         background-position-y: 8%;
-         padding-bottom: 40px;
-         .talking_about_fork__name {
-             font-size: 36px;
-             padding-top: 30px;
-         }
-         .talking_about_fork__text {
-             font-size: 16px;
-         }
-     }
-     .fork_pricing {
-         background-color: #4b3b4e;
-         text-align: center;
-         flex-direction: column;
-         padding-bottom: 90px;
-         .fork_pricing__name {
-             margin: 0px auto;
-             color: #fff;
-             font-family: $general_font;
-             font-size: 28px;
-             font-weight: 600;
-             text-align: center;
-             line-height: 130%;
-             padding-top: 30px;
-             padding-bottom: 30px;
-         }
-         .fork_pricing__plan {
-             width: 255px;
-             height: 455px;
-             margin: 20px auto;
-             .plan_item__name {
-                 line-height: 100px;
-                 margin: 0px;
-                 color: #fff;
-                 font-family: $general_font;
-                 font-size: 24px;
-                 text-align: center;
-                 font-weight: 300;
-                 background-color: rgba(243, 243, 243, 0.2);
-             }
-             .plan_item__price {
-                 background-color: rgba(243, 243, 243, 0.1);
-                 height: 355px;
-                 position: relative;
-                 .price__cost {
-                     margin: 0px;
-                     padding: 30px 0px 35px 0px;
-                     color: #fff;
-                     font-family: $general_font;
-                     font-size: 60px;
-                     text-align: center;
-                     .price__sing_dol {
-                         font-weight: 300;
-                     }
-                 }
-                 .price__per_month {
-                     margin: 0px;
-                     color: #7c707e;
-                     text-transform: uppercase;
-                     font-family: $general_font;
-                     font-size: 14px;
-                     text-align: center;
-                 }
-                 .price__line {
-                     background: #8d81ac;
-                     width: 60px;
-                     height: 4px;
-                     margin: 30px auto;
-                 }
-                 .price__offer {
-                     color: #fff;
-                     font-family: $general_font;
-                     font-size: 16px;
-                     text-align: center;
-                 }
-                 .price__btn_purchase {
-                     position: absolute;
-                     color: #fff;
-                     font-family: $general_font;
-                     font-size: 15px;
-                     text-align: center;
-                     background: #776b79;
-                     width: 155px;
-                     height: 40px;
-                     border: 1px solid #776b79;
-                     border-radius: 20px;
-                     left: 0;
-                     right: 0;
-                     margin-left: auto;
-                     margin-right: auto;
-                     bottom: 40px;
-                 }
-             }
-         }
-         .fork_pricing__active {
-             width: 290px;
-             height: 555px;
-             .plan_item__name {
-                 background-color: #3d2e3d;
-             }
-             .plan_item__price {
-                 height: 455px;
-                 background-color: #403344;
-             }
-             .price__btn_purchase {
-                 background-color: #5d5160;
-             }
-             .price__line {
-                 margin: 50px auto;
-             }
-         }
-     }
- }
- 
- @media screen and (min-width: 321px) and (max-width: 480px) {
-     .logo__text {
-         display: block;
-         width: 100px;
-         margin: 0px 0px;
-         color: #8d81ac;
-         font-family: $general_font;
-         font-size: 24px;
-         font-weight: 600;
-     }
-     .header_fork_app {
-         height: 833px;
-         background: url(../img/header_background_480.png) 100% 100% no-repeat;
-         .header_fork_app__name {
-             font-size: 54px;
-             font-weight: 700;
-             padding-top: 100px;
-             padding-bottom: 40px;
-         }
-         .header_fork_app__text {
-             font-size: 20px;
-         }
-         .header_fork_app__textForMac {
-             font-size: 16px;
-         }
-         .revolutionary_button {
-             .revolutionary_button__item {
-                 border-radius: 40px;
-                 width: 81%;
-                 height: 60px;
-                 font-size: 5vw;
-             }
-         }
-     }
-     .revolutionary_editor__name {
-         padding-top: 135px;
-         font-size: 10vw;
-     }
-     .revolutionary_editor__text {
-         width: 95%;
-         font-size: 16px;
-     }
-     .talking_about_fork {
-         background: url(../img/talking_about_fork_background_480.png) 100% 100% no-repeat;
-         background-position-y: 8%;
-         padding-bottom: 40px;
-         .talking_about_fork__name {
-             font-size: 36px;
-             padding-top: 30px;
-         }
-         .talking_about_fork__text {
-             font-size: 16px;
-         }
-     }
- }
- 
- @media screen and (max-width: 480px) {
-     .header {
-         .menu {
-             display: none;
-         }
-         .btn {
-             width: 128px;
-             text-align: center;
-             height: 100px;
-             margin: 0px;
-             .btn__item {
-                 border: 1px solid #8d81ac;
-                 border-radius: 20px;
-                 width: 115px;
-                 height: 40px;
-                 background-color: #8d81ac;
-                 color: #fff;
-                 font-family: $general_font;
-                 font-size: 15px;
-                 font-weight: 600;
-             }
-         }
-         .hamburger {
-             width: 26px;
-             height: 100px;
-             margin: 0px;
-             padding-right: 20px;
-             text-align: center;
-         }
-     }
- }
- 
- @media screen and (max-width: 1200px) {
-     .header {
-         background-color: #27262a;
-         display: flex;
-         line-height: 100px;
-         justify-content: space-between;
-         .logo {
-             width: 45px;
-             height: 43px;
-             margin: auto 0px;
-             padding-left: 20px;
-             background: url(../img/header_logo_320.png) 100% 100% no-repeat;
-         }
-     }
-     .header_fork_app {
-         text-align: center;
-         position: relative;
-         .header_fork_app__name {
-             margin: 0px;
-             color: #fff;
-             font-family: $general_font;
-             font-weight: 700;
-         }
-         .header_fork_app__text {
-             width: 84%;
-             margin: 0 auto;
-             color: #8d81ac;
-             font-family: $general_font;
-             font-weight: 500;
-         }
-         .header_fork_app__textForMac {
-             color: #848e97;
-             font-family: $general_font;
-             font-weight: 500;
-         }
-         .revolutionary_button {
-             text-align: center;
-             position: absolute;
-             left: 0;
-             right: 0;
-             top: 97%;
-             margin: 0px auto;
-             margin-bottom: 50px;
-             z-index: 2;
-             .revolutionary_button__item {
-                 border: 1px solid #8d81ac;
-                 background-color: #8d81ac;
-                 color: #fff;
-                 font-family: $general_font;
-                 font-weight: 600;
-             }
-             .revolutionary_button__trial_version {
-                 color: #848e97;
-                 font-family: $general_font;
-                 font-size: 14px;
-             }
-         }
-     }
-     .revolutionary_editor__name {
-         color: #635c73;
-         text-transform: uppercase;
-         text-align: center;
-         font-family: $general_font;
-     }
-     .revolutionary_editor__text {
-         line-height: 130%;
-         margin: 0px auto 30px auto;
-         text-align: center;
-         color: #5b5b5b;
-         font-family: $general_font;
-     }
-     .revolutionary_editor__icons {
-         width: 83%;
-         display: flex;
-         flex-direction: row;
-         margin: 0px auto 60px auto;
-         .icon_watch {
-             display: flex;
-             flex-direction: row;
-             .icon_watch__sign {
-                 width: 80px;
-                 line-height: 25px;
-                 color: #333333;
-                 font-family: $general_font;
-                 font-weight: 700;
-                 font-size: 12px;
-                 text-align: center;
-                 border: 1px solid #d5d5d5;
-                 background-image: linear-gradient(#fafafa, #f1f1f1);
-                 .sign__name {
-                     margin: 0px auto;
-                 }
-             }
-             .icon_watch__number {
-                 width: 40px;
-                 line-height: 25px;
-                 color: #333333;
-                 font-family: $general_font;
-                 font-size: 12px;
-                 font-weight: 700;
-                 text-align: center;
-                 border: 1px solid #d5d5d5;
-                 background-color: #fff;
-             }
-         }
-         .icon_star {
-             display: flex;
-             flex-direction: row;
-             margin: 0 10px;
-             .icon_star__sign {
-                 width: 65px;
-                 line-height: 25px;
-                 color: #333333;
-                 font-family: $general_font;
-                 font-weight: 700;
-                 font-size: 12px;
-                 text-align: center;
-                 border: 1px solid #d5d5d5;
-                 background-image: linear-gradient(#fafafa, #f1f1f1);
-                 .sign__name {
-                     margin: 0px auto;
-                 }
-             }
-             .icon_star__number {
-                 width: 45px;
-                 line-height: 25px;
-                 color: #333333;
-                 font-family: $general_font;
-                 font-size: 12px;
-                 font-weight: 700;
-                 text-align: center;
-                 border: 1px solid #d5d5d5;
-                 background-color: #fff;
-             }
-         }
-         .icon_fork {
-             display: flex;
-             flex-direction: row;
-             .icon_fork__sign {
-                 width: 65px;
-                 line-height: 25px;
-                 color: #333333;
-                 font-family: $general_font;
-                 font-weight: 700;
-                 font-size: 12px;
-                 text-align: center;
-                 border: 1px solid #d5d5d5;
-                 background-image: linear-gradient(#fafafa, #f1f1f1);
-                 .sign__name {
-                     margin: 0px auto;
-                 }
-             }
-             .icon_fork__number {
-                 width: 45px;
-                 line-height: 25px;
-                 color: #333333;
-                 font-family: $general_font;
-                 font-size: 12px;
-                 font-weight: 700;
-                 text-align: center;
-                 border: 1px solid #d5d5d5;
-                 background-color: #fff;
-             }
-         }
-     }
-     .talking_about_fork {
-         background-color: #4b3b4e;
-         text-align: center;
-         .talking_about_fork__name {
-             margin: 0px;
-             color: #fff;
-             font-family: $general_font;
-             font-weight: 600;
-             line-height: 130%;
-         }
-         .talking_about_fork__logo_company {
-             margin: 30px 0px;
-         }
-         .talking_about_fork__text {
-             width: 75%;
-             margin: 0px auto;
-             color: #fff;
-             font-size: 16px;
-             font-family: $general_font;
-             font-style: italic;
-             line-height: 120%;
-         }
-     }
- }
+/*Ruslan styles will be here*/
+
+$general_font: 'Montserrat',
+sans-serif;
+@media screen and (min-width: 319px) and (max-width: 480px) {
+    .header {
+        justify-content: space-between;
+        .menu {
+            display: none;
+        }
+        .hamburger {
+            width: 26px;
+            height: 100px;
+            margin: 0px;
+            padding-right: 20px;
+            text-align: center;
+        }
+    }
+    .talking_about_fork__last_paraghraph {
+        width: 80%;
+        .last_paraghraph__text {
+            display: none;
+        }
+    }
+    .fork_pricing__plan {
+        width: 255px;
+    }
+    .fork_pricing__active {
+        width: 295px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .logo__text {
+        display: none;
+    }
+    .header_fork_app {
+        height: 800px;
+        background: url(../img/header_background_480.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .header_fork_app__name {
+            font-size: 48px;
+            padding-top: 80px;
+            padding-bottom: 10px;
+        }
+        .header_fork_app__text {
+            font-size: 18px;
+        }
+        .header_fork_app__textForMac {
+            font-size: 14px;
+        }
+        .revolutionary_button {
+            .revolutionary_button__item {
+                border-radius: 20px;
+                width: 90%;
+                height: 40px;
+                font-size: 15px;
+            }
+        }
+    }
+    .revolutionary_editor__name {
+        padding-top: 100px;
+        font-size: 26px;
+    }
+    .revolutionary_editor__text {
+        width: 83%;
+        font-size: 14px;
+    }
+    .revolutionary_editor__icons {
+        width: 90%;
+    }
+    .talking_about_fork {
+        background: url(../img/talking_about_fork_background_480.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding-bottom: 40px;
+        .talking_about_fork__name {
+            width: 90%;
+            font-size: 36px;
+            padding-top: 30px;
+        }
+        .talking_about_fork__text {
+            font-size: 16px;
+        }
+    }
+    .fork_pricing {
+        flex-direction: column;
+        padding-bottom: 90px;
+        .fork_pricing__name {
+            width: 90%;
+            font-size: 28px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 480px) {
+    .logo__text {
+        display: block;
+        margin: auto 0px;
+        padding-left: 10px;
+        color: #8d81ac;
+        font-family: $general_font;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .header_fork_app {
+        height: 833px;
+        background: url(../img/header_background_480.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .header_fork_app__name {
+            font-size: 54px;
+            font-weight: 700;
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+        .header_fork_app__text {
+            font-size: 20px;
+        }
+        .header_fork_app__textForMac {
+            font-size: 16px;
+        }
+        .revolutionary_button {
+            .revolutionary_button__item {
+                border-radius: 40px;
+                width: 81%;
+                height: 60px;
+                font-size: 5vw;
+            }
+        }
+    }
+    .revolutionary_editor__name {
+        padding-top: 135px;
+        font-size: 10vw;
+    }
+    .revolutionary_editor__text {
+        width: 95%;
+        font-size: 16px;
+    }
+    .revolutionary_editor__icons {
+        width: 400px;
+    }
+    .talking_about_fork {
+        background: url(../img/talking_about_fork_background_480.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding-bottom: 75px;
+        .talking_about_fork__name {
+            font-size: 42px;
+            padding-top: 50px;
+        }
+        .talking_about_fork__text {
+            font-size: 16px;
+        }
+    }
+    .fork_pricing {
+        flex-direction: column;
+        padding-bottom: 90px;
+        .fork_pricing__name {
+            width: 89%;
+            font-size: 42px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .header_fork_app {
+        height: 800px;
+        background: url(../img/header_background_768.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .talking_about_fork {
+        background: url(../img/talking_about_fork_background_768.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .header_fork_app {
+        height: 800px;
+        background: url(../img/header_background_1200.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .talking_about_fork {
+        background: url(../img/talking_about_fork_background_1200.png) 100% 100% no-repeat;
+        background-size: cover;
+        background-position: top center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    .header {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .header_logo {
+            width: 150px;
+            .logo__text {
+                display: block;
+                padding-left: 10px;
+                color: #8d81ac;
+                font-family: $general_font;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+        .menu {
+            display: block;
+            width: 75%;
+            line-height: 30px;
+            padding: 0;
+            margin: 0 auto;
+            .menu__list {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                list-style-type: none;
+                .menu_item {
+                    font-family: $general_font;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #8d81ac;
+                    text-decoration: none;
+                }
+            }
+        }
+        .hamburger {
+            display: none;
+        }
+    }
+    .header_fork_app {
+        .header_fork_app__name {
+            font-size: 72px;
+            padding-top: 50px;
+            padding-bottom: 40px;
+        }
+        .header_fork_app__text {
+            font-size: 24px;
+        }
+        .header_fork_app__textForMac {
+            font-size: 14px;
+        }
+        .revolutionary_button {
+            .revolutionary_button__item {
+                border-radius: 60px;
+                width: 50%;
+                height: 60px;
+                font-size: 3vw;
+            }
+        }
+    }
+    .revolutionary_editor__name {
+        padding-top: 155px;
+        font-size: 5vw;
+    }
+    .revolutionary_editor__text {
+        width: 88%;
+        font-size: 18px;
+    }
+    .revolutionary_editor__icons {
+        width: 415px;
+    }
+    .talking_about_fork {
+        padding-bottom: 75px;
+        .talking_about_fork__name {
+            width: 89%;
+            font-size: 42px;
+            padding-top: 50px;
+        }
+        .talking_about__company {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            .talking_about_fork__logo_company {
+                width: 40%;
+                .talking_about_fork__text {
+                    width: 90%;
+                    font-size: 16px;
+                }
+            }
+        }
+        .talking_about_fork__last_paraghraph {
+            width: 90%;
+        }
+    }
+    .fork_pricing {
+        display: flex;
+        flex-direction: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 90px;
+        .fork_pricing__name {
+            width: 89%;
+            font-size: 42px;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        .plan_item__wrap {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .fork_pricing__plan {
+                width: 38%;
+            }
+            .fork_pricing__active {
+                width: 40%;
+            }
+            .plan_entrerprice {
+                padding-top: 45px
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .header {
+        .header_logo {
+            width: 150px;
+            .logo__text {
+                display: block;
+                padding-left: 10px;
+                color: #8d81ac;
+                font-family: $general_font;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+        .menu {
+            display: block;
+            width: 45%;
+            padding: 0;
+            margin: 0 5% 0 20%;
+            .menu__list {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                list-style-type: none;
+                .menu_item {
+                    font-family: $general_font;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #8d81ac;
+                    text-decoration: none;
+                }
+            }
+        }
+        .hamburger {
+            display: none;
+        }
+    }
+    .header :nth-child(1) {
+        order: 1;
+    }
+    .header :nth-child(2) {
+        order: 3;
+    }
+    .header :nth-child(3) {
+        order: 2;
+    }
+    .header_fork_app {
+        .header_fork_app__name {
+            font-size: 82px;
+            padding-top: 75px;
+            padding-bottom: 30px;
+        }
+        .header_fork_app__text {
+            font-size: 30px;
+        }
+        .header_fork_app__textForMac {
+            font-size: 16px;
+        }
+        .revolutionary_button {
+            .revolutionary_button__item {
+                border-radius: 60px;
+                width: 35%;
+                height: 60px;
+                font-size: 2vw;
+            }
+        }
+    }
+    .revolutionary_editor__name {
+        padding-top: 155px;
+        font-size: 4vw;
+    }
+    .revolutionary_editor__text {
+        width: 90%;
+        font-size: 21px;
+    }
+    .revolutionary_editor__icons {
+        width: 415px;
+    }
+    .talking_about_fork {
+        padding-bottom: 100px;
+        .talking_about_fork__name {
+            width: 90%;
+            font-size: 48px;
+            padding-top: 100px;
+        }
+        .talking_about__company {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            .talking_about_fork__logo_company {
+                width: 30%;
+                .talking_about_fork__text {
+                    width: 90%;
+                    font-size: 16px;
+                }
+            }
+        }
+        .talking_about_fork__last_paraghraph {
+            width: 80%;
+        }
+    }
+    .fork_pricing {
+        padding-bottom: 90px;
+        .fork_pricing__name {
+            width: 89%;
+            font-size: 42px;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        .plan_item__wrap {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .fork_pricing__plan {
+                width: 20%;
+            }
+            .fork_pricing__active {
+                width: 27%;
+            }
+            .plan_entrerprice {
+                padding-top: 45px
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        background-color: #27262a;
+        display: flex;
+        line-height: 100px;
+        .header_logo {
+            padding-left: 20px;
+            margin: auto 0;
+            line-height: 50px;
+            .header_logo__link {
+                display: flex;
+                text-decoration: none;
+                .logo {
+                    width: 45px;
+                    height: 43px;
+                    margin: auto 0px;
+                    background: url(../img/header_logo_320.png) 100% 100% no-repeat;
+                }
+            }
+        }
+        .btn {
+            width: 128px;
+            text-align: center;
+            height: 100px;
+            margin: auto 0px;
+            padding-right: 20px;
+            .btn__item {
+                border: 1px solid #8d81ac;
+                border-radius: 20px;
+                width: 115px;
+                height: 40px;
+                background-color: #8d81ac;
+                color: #fff;
+                font-family: $general_font;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+    .header_fork_app {
+        text-align: center;
+        position: relative;
+        .header_fork_app__name {
+            margin: 0px;
+            color: #fff;
+            font-family: $general_font;
+            font-weight: 700;
+        }
+        .header_fork_app__text {
+            width: 84%;
+            margin: 0 auto;
+            color: #8d81ac;
+            font-family: $general_font;
+            font-weight: 500;
+        }
+        .header_fork_app__textForMac {
+            color: #848e97;
+            font-family: $general_font;
+            font-weight: 500;
+        }
+        .revolutionary_button {
+            text-align: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 97%;
+            margin: 0px auto;
+            margin-bottom: 50px;
+            z-index: 2;
+            .revolutionary_button__item {
+                border: 1px solid #8d81ac;
+                background-color: #8d81ac;
+                color: #fff;
+                font-family: $general_font;
+                font-weight: 600;
+            }
+            .revolutionary_button__trial_version {
+                color: #848e97;
+                font-family: $general_font;
+                font-size: 14px;
+            }
+        }
+    }
+    .revolutionary_editor__name {
+        color: #635c73;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $general_font;
+    }
+    .revolutionary_editor__text {
+        line-height: 130%;
+        margin: 0px auto 30px auto;
+        text-align: center;
+        color: #5b5b5b;
+        font-family: $general_font;
+    }
+    .revolutionary_editor__icons {
+        margin: 0px auto 60px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .icons {
+            display: flex;
+            flex-direction: row;
+            height: 25px;
+            padding: 10px 0;
+            margin: 0px auto;
+            .icon__sign {
+                width: 80px;
+                line-height: 25px;
+                color: #333333;
+                font-family: $general_font;
+                font-weight: 700;
+                font-size: 12px;
+                text-align: center;
+                border: 1px solid #d5d5d5;
+                background-image: linear-gradient(#fafafa, #f1f1f1);
+                .sign__name {
+                    margin: 0px auto;
+                }
+            }
+            .icon__number {
+                width: 40px;
+                line-height: 25px;
+                color: #333333;
+                font-family: $general_font;
+                font-size: 12px;
+                font-weight: 700;
+                text-align: center;
+                border: 1px solid #d5d5d5;
+                background-color: #fff;
+            }
+        }
+    }
+    .talking_about_fork {
+        background-color: #4b3b4e;
+        text-align: center;
+        .talking_about_fork__name {
+            margin: 0px auto;
+            color: #fff;
+            font-family: $general_font;
+            font-weight: 600;
+            line-height: 130%;
+        }
+        .talking_about_fork__logo_company {
+            margin: 30px 0px;
+        }
+        .talking_about_fork__text {
+            width: 75%;
+            margin: 0px auto;
+            padding: 30px 0;
+            color: #fff;
+            font-size: 16px;
+            font-family: $general_font;
+            font-style: italic;
+            line-height: 120%;
+        }
+        .talking_about_fork__last_paraghraph {
+            margin: 0 auto;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #645766;
+            .last_paraghraph__text {
+                font-size: 14px;
+                font-family: $general_font;
+                color: #938396;
+            }
+        }
+    }
+    .fork_pricing {
+        background-color: #4b3b4e;
+        text-align: center;
+        .fork_pricing__name {
+            margin: 0px auto;
+            color: #fff;
+            font-family: $general_font;
+            font-weight: 600;
+            text-align: center;
+            line-height: 130%;
+        }
+        .fork_pricing__plan {
+            height: 455px;
+            margin: 20px auto;
+            .plan_item__name {
+                line-height: 100px;
+                margin: 0px;
+                color: #fff;
+                font-family: $general_font;
+                font-size: 20px;
+                text-align: center;
+                font-weight: 300;
+                background-color: rgba(243, 243, 243, 0.2);
+            }
+            .plan_item__price {
+                background-color: rgba(243, 243, 243, 0.1);
+                height: 355px;
+                position: relative;
+                .price__cost {
+                    margin: 0px;
+                    padding: 30px 0px 35px 0px;
+                    color: #fff;
+                    font-family: $general_font;
+                    font-size: 60px;
+                    text-align: center;
+                    .price__sing_dol {
+                        font-weight: 300;
+                    }
+                }
+                .price__per_month {
+                    margin: 0px;
+                    color: #7c707e;
+                    text-transform: uppercase;
+                    font-family: $general_font;
+                    font-size: 14px;
+                    text-align: center;
+                }
+                .price__line {
+                    background: #8d81ac;
+                    width: 60px;
+                    height: 4px;
+                    margin: 30px auto;
+                }
+                .price__offer {
+                    color: #fff;
+                    font-family: $general_font;
+                    font-size: 16px;
+                    text-align: center;
+                }
+                .price__btn_purchase {
+                    position: absolute;
+                    color: #fff;
+                    font-family: $general_font;
+                    font-size: 15px;
+                    text-align: center;
+                    background: #776b79;
+                    width: 155px;
+                    height: 40px;
+                    border: 1px solid #776b79;
+                    border-radius: 20px;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    bottom: 40px;
+                }
+            }
+        }
+        .fork_pricing__active {
+            height: 555px;
+            .plan_item__name {
+                background-color: #3d2e3d;
+            }
+            .plan_item__price {
+                height: 455px;
+                background-color: #403344;
+            }
+            .price__btn_purchase {
+                background-color: #5d5160;
+            }
+            .price__line {
+                margin: 50px auto;
+            }
+        }
+    }
+}
