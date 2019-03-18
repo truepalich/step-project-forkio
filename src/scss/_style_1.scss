@@ -7,6 +7,12 @@ sans-serif;
         justify-content: space-between;
         .menu {
             display: none;
+        }
+        .hidemenu {
+            display: none;
+        }
+        .dropmenu {
+            display: block;
             width: 100vw;
             position: absolute;
             top: 100px;
@@ -46,6 +52,7 @@ sans-serif;
             text-align: center;
             .hamburger__btn_close {
                 display: none;
+                width: 60px;
                 color: #fff;
                 font-size: 58px;
                 position: absolute;
@@ -54,6 +61,7 @@ sans-serif;
             }
             .hamburger__btn_close a {
                 text-decoration: none;
+                padding-right: 30px;
             }
             .hamburger__btn_close a:visited {
                 color: #fff;
@@ -379,7 +387,7 @@ sans-serif;
     }
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
+@media screen and (min-width: 993px) {
     .header {
         .header_logo {
             width: 150px;
@@ -514,279 +522,283 @@ sans-serif;
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .header {
-        background-color: #27262a;
-        display: flex;
-        line-height: 100px;
-        .header_logo {
-            padding-left: 20px;
-            margin: auto 0;
-            line-height: 50px;
-            .header_logo__link {
-                display: flex;
-                text-decoration: none;
-                .logo {
-                    width: 45px;
-                    height: 43px;
-                    margin: auto 0px;
-                    background: url(../img/header_logo_320.png) 100% 100% no-repeat;
-                }
-                .logo:hover {
-                    background: url(../img/header_logo_hover_320.png) 100% 100% no-repeat;
-                }
+.header {
+    background-color: #27262a;
+    display: flex;
+    line-height: 100px;
+    .header_logo {
+        padding-left: 20px;
+        margin: auto 0;
+        line-height: 50px;
+        .header_logo__link {
+            display: flex;
+            text-decoration: none;
+            .logo {
+                width: 45px;
+                height: 43px;
+                margin: auto 0px;
+                background: url(../img/header_logo_320.png) 100% 100% no-repeat;
             }
-        }
-        .btn {
-            width: 128px;
-            text-align: center;
-            height: 100px;
-            margin: auto 0px;
-            padding-right: 20px;
-            .btn__item {
-                border: 1px solid #8d81ac;
-                border-radius: 20px;
-                width: 115px;
-                height: 40px;
-                background-color: #8d81ac;
-                color: #fff;
-                font-family: $general_font;
-                font-size: 15px;
-                font-weight: 600;
-            }
-            .btn__item:hover {
-                background-color: white;
-                color: #8d81ac;
+            .logo:hover {
+                background: url(../img/header_logo_hover_320.png) 100% 100% no-repeat;
             }
         }
     }
-    .header_fork_app {
+    .btn {
+        width: 128px;
         text-align: center;
-        position: relative;
-        .header_fork_app__name {
+        height: 100px;
+        margin: auto 0px;
+        padding-right: 20px;
+        .btn__item {
+            border: 1px solid #8d81ac;
+            border-radius: 20px;
+            width: 115px;
+            height: 40px;
+            background-color: #8d81ac;
+            color: #fff;
+            font-family: $general_font;
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .btn__item:hover {
+            background-color: white;
+            color: #8d81ac;
+        }
+    }
+}
+
+.header_fork_app {
+    text-align: center;
+    position: relative;
+    .header_fork_app__name {
+        margin: 0px;
+        color: #fff;
+        font-family: $general_font;
+        font-weight: 700;
+    }
+    .header_fork_app__text {
+        width: 84%;
+        margin: 0 auto;
+        color: #8d81ac;
+        font-family: $general_font;
+        font-weight: 500;
+    }
+    .header_fork_app__textForMac {
+        color: #848e97;
+        font-family: $general_font;
+        font-weight: 500;
+    }
+    .revolutionary_button {
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 97%;
+        margin: 0px auto;
+        margin-bottom: 50px;
+        z-index: 2;
+        .revolutionary_button__item {
+            border: 1px solid #8d81ac;
+            background-color: #8d81ac;
+            color: #fff;
+            font-family: $general_font;
+            font-weight: 600;
+        }
+        .revolutionary_button__item:hover {
+            background-color: #fff;
+            color: #8d81ac;
+        }
+        .revolutionary_button__trial_version {
+            color: #848e97;
+            font-family: $general_font;
+            font-size: 14px;
+        }
+    }
+}
+
+.revolutionary_editor__name {
+    color: #635c73;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $general_font;
+}
+
+.revolutionary_editor__text {
+    line-height: 130%;
+    margin: 0px auto 30px auto;
+    text-align: center;
+    color: #5b5b5b;
+    font-family: $general_font;
+}
+
+.revolutionary_editor__icons {
+    margin: 0px auto 60px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .icons {
+        display: flex;
+        flex-direction: row;
+        height: 25px;
+        padding: 10px 0;
+        margin: 0px auto;
+        .icon__sign {
+            width: 80px;
+            line-height: 25px;
+            color: #333333;
+            font-family: $general_font;
+            font-weight: 700;
+            font-size: 12px;
+            text-align: center;
+            border: 1px solid #d5d5d5;
+            background-image: linear-gradient(#fafafa, #f1f1f1);
+            .sign__name {
+                margin: 0px auto;
+            }
+        }
+        .icon__number {
+            width: 40px;
+            line-height: 25px;
+            color: #333333;
+            font-family: $general_font;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            border: 1px solid #d5d5d5;
+            background-color: #fff;
+        }
+    }
+}
+
+.talking_about_fork {
+    background-color: #4b3b4e;
+    text-align: center;
+    .talking_about_fork__name {
+        margin: 0px auto;
+        color: #fff;
+        font-family: $general_font;
+        font-weight: 600;
+        line-height: 130%;
+    }
+    .talking_about_fork__logo_company {
+        margin: 30px 0px;
+    }
+    .talking_about_fork__text {
+        width: 75%;
+        margin: 0px auto;
+        padding: 30px 0;
+        color: #fff;
+        font-size: 16px;
+        font-family: $general_font;
+        font-style: italic;
+        line-height: 120%;
+    }
+    .talking_about_fork__last_paraghraph {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #645766;
+        .last_paraghraph__text {
+            font-size: 14px;
+            font-family: $general_font;
+            color: #938396;
+        }
+    }
+}
+
+.fork_pricing {
+    background-color: #4b3b4e;
+    text-align: center;
+    .fork_pricing__name {
+        margin: 0px auto;
+        color: #fff;
+        font-family: $general_font;
+        font-weight: 600;
+        text-align: center;
+        line-height: 130%;
+    }
+    .fork_pricing__plan {
+        height: 455px;
+        margin: 20px auto;
+        .plan_item__name {
+            line-height: 100px;
             margin: 0px;
             color: #fff;
             font-family: $general_font;
-            font-weight: 700;
-        }
-        .header_fork_app__text {
-            width: 84%;
-            margin: 0 auto;
-            color: #8d81ac;
-            font-family: $general_font;
-            font-weight: 500;
-        }
-        .header_fork_app__textForMac {
-            color: #848e97;
-            font-family: $general_font;
-            font-weight: 500;
-        }
-        .revolutionary_button {
+            font-size: 20px;
             text-align: center;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 97%;
-            margin: 0px auto;
-            margin-bottom: 50px;
-            z-index: 2;
-            .revolutionary_button__item {
-                border: 1px solid #8d81ac;
-                background-color: #8d81ac;
-                color: #fff;
-                font-family: $general_font;
-                font-weight: 600;
-            }
-            .revolutionary_button__item:hover {
-                background-color: #fff;
-                color: #8d81ac;
-            }
-            .revolutionary_button__trial_version {
-                color: #848e97;
-                font-family: $general_font;
-                font-size: 14px;
-            }
+            font-weight: 300;
+            background-color: rgba(243, 243, 243, 0.2);
         }
-    }
-    .revolutionary_editor__name {
-        color: #635c73;
-        text-transform: uppercase;
-        text-align: center;
-        font-family: $general_font;
-    }
-    .revolutionary_editor__text {
-        line-height: 130%;
-        margin: 0px auto 30px auto;
-        text-align: center;
-        color: #5b5b5b;
-        font-family: $general_font;
-    }
-    .revolutionary_editor__icons {
-        margin: 0px auto 60px auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        .icons {
-            display: flex;
-            flex-direction: row;
-            height: 25px;
-            padding: 10px 0;
-            margin: 0px auto;
-            .icon__sign {
-                width: 80px;
-                line-height: 25px;
-                color: #333333;
-                font-family: $general_font;
-                font-weight: 700;
-                font-size: 12px;
-                text-align: center;
-                border: 1px solid #d5d5d5;
-                background-image: linear-gradient(#fafafa, #f1f1f1);
-                .sign__name {
-                    margin: 0px auto;
-                }
-            }
-            .icon__number {
-                width: 40px;
-                line-height: 25px;
-                color: #333333;
-                font-family: $general_font;
-                font-size: 12px;
-                font-weight: 700;
-                text-align: center;
-                border: 1px solid #d5d5d5;
-                background-color: #fff;
-            }
-        }
-    }
-    .talking_about_fork {
-        background-color: #4b3b4e;
-        text-align: center;
-        .talking_about_fork__name {
-            margin: 0px auto;
-            color: #fff;
-            font-family: $general_font;
-            font-weight: 600;
-            line-height: 130%;
-        }
-        .talking_about_fork__logo_company {
-            margin: 30px 0px;
-        }
-        .talking_about_fork__text {
-            width: 75%;
-            margin: 0px auto;
-            padding: 30px 0;
-            color: #fff;
-            font-size: 16px;
-            font-family: $general_font;
-            font-style: italic;
-            line-height: 120%;
-        }
-        .talking_about_fork__last_paraghraph {
-            margin: 0 auto;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #645766;
-            .last_paraghraph__text {
-                font-size: 14px;
-                font-family: $general_font;
-                color: #938396;
-            }
-        }
-    }
-    .fork_pricing {
-        background-color: #4b3b4e;
-        text-align: center;
-        .fork_pricing__name {
-            margin: 0px auto;
-            color: #fff;
-            font-family: $general_font;
-            font-weight: 600;
-            text-align: center;
-            line-height: 130%;
-        }
-        .fork_pricing__plan {
-            height: 455px;
-            margin: 20px auto;
-            .plan_item__name {
-                line-height: 100px;
+        .plan_item__price {
+            background-color: rgba(243, 243, 243, 0.1);
+            height: 355px;
+            position: relative;
+            .price__cost {
                 margin: 0px;
+                padding: 30px 0px 35px 0px;
                 color: #fff;
                 font-family: $general_font;
-                font-size: 20px;
+                font-size: 60px;
                 text-align: center;
-                font-weight: 300;
-                background-color: rgba(243, 243, 243, 0.2);
-            }
-            .plan_item__price {
-                background-color: rgba(243, 243, 243, 0.1);
-                height: 355px;
-                position: relative;
-                .price__cost {
-                    margin: 0px;
-                    padding: 30px 0px 35px 0px;
-                    color: #fff;
-                    font-family: $general_font;
-                    font-size: 60px;
-                    text-align: center;
-                    .price__sing_dol {
-                        font-weight: 300;
-                    }
-                }
-                .price__per_month {
-                    margin: 0px;
-                    color: #7c707e;
-                    text-transform: uppercase;
-                    font-family: $general_font;
-                    font-size: 14px;
-                    text-align: center;
-                }
-                .price__line {
-                    background: #8d81ac;
-                    width: 60px;
-                    height: 4px;
-                    margin: 30px auto;
-                }
-                .price__offer {
-                    color: #fff;
-                    font-family: $general_font;
-                    font-size: 16px;
-                    text-align: center;
-                }
-                .price__btn_purchase {
-                    position: absolute;
-                    color: #fff;
-                    font-family: $general_font;
-                    font-size: 15px;
-                    text-align: center;
-                    background: #776b79;
-                    width: 155px;
-                    height: 40px;
-                    border: 1px solid #776b79;
-                    border-radius: 20px;
-                    left: 0;
-                    right: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                    bottom: 40px;
+                .price__sing_dol {
+                    font-weight: 300;
                 }
             }
-        }
-        .fork_pricing__active {
-            height: 555px;
-            .plan_item__name {
-                background-color: #3d2e3d;
-            }
-            .plan_item__price {
-                height: 455px;
-                background-color: #403344;
-            }
-            .price__btn_purchase {
-                background-color: #5d5160;
+            .price__per_month {
+                margin: 0px;
+                color: #7c707e;
+                text-transform: uppercase;
+                font-family: $general_font;
+                font-size: 14px;
+                text-align: center;
             }
             .price__line {
-                margin: 50px auto;
+                background: #8d81ac;
+                width: 60px;
+                height: 4px;
+                margin: 30px auto;
             }
+            .price__offer {
+                color: #fff;
+                font-family: $general_font;
+                font-size: 16px;
+                text-align: center;
+            }
+            .price__btn_purchase {
+                position: absolute;
+                color: #fff;
+                font-family: $general_font;
+                font-size: 15px;
+                text-align: center;
+                background: #776b79;
+                width: 155px;
+                height: 40px;
+                border: 1px solid #776b79;
+                border-radius: 20px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                bottom: 40px;
+            }
+        }
+    }
+    .fork_pricing__active {
+        height: 555px;
+        .plan_item__name {
+            background-color: #3d2e3d;
+        }
+        .plan_item__price {
+            height: 455px;
+            background-color: #403344;
+        }
+        .price__btn_purchase {
+            background-color: #5d5160;
+        }
+        .price__line {
+            margin: 50px auto;
         }
     }
 }
