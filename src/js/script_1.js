@@ -1,19 +1,18 @@
 //Ruslan js will be here
-let btn = document.querySelector('.hamburger');
-let menu = document.querySelector('.menu');
-let active = false;
-btn.addEventListener('click', () => {
 
-    active = !active;
-
-    if (active) {
-        menu.style.display = 'block';
-        btn.classList.remove('fa-bars');
-        btn.classList.add('fa-sleigh');
-    } else {
-        menu.style.display = 'none';
-        btn.classList.remove('fa-sleigh');
-        btn.classList.add('fa-bars');
-    }
-
+"use strict"
+let btn_open = document.querySelector(".hamburger__btn_open");
+let btn_close = document.querySelector(".hamburger__btn_close");
+let menu = document.querySelector("menu");
+btn_open.addEventListener('click', function() {
+    btn_open.style.display = "none";
+    btn_close.style.display = "block";
+    menu.style.display = "block";
 })
+
+btn_close.addEventListener("click", function() {
+    btn_open.style.display = "block";
+    btn_close.style.display = "none";
+    menu.style.display = "none";
+
+});

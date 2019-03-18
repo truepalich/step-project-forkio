@@ -7,13 +7,58 @@ sans-serif;
         justify-content: space-between;
         .menu {
             display: none;
+            width: 100vw;
+            position: absolute;
+            top: 100px;
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+            .menu__list {
+                display: flex;
+                flex-direction: column;
+                background-color: #333333;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                .menu_item {
+                    text-decoration: none;
+                    line-height: 100px;
+                    color: #fff;
+                    font-family: $general_font;
+                    font-size: 32px;
+                    padding-left: 30px;
+                }
+                .menu_item:hover {
+                    color: #8d81ac;
+                    border-left: 5px solid #8d81ac;
+                }
+            }
+            .menu__list li {
+                border-bottom: 1px solid grey;
+            }
         }
         .hamburger {
+            position: relative;
             width: 26px;
             height: 100px;
             margin: 0px;
             padding-right: 20px;
             text-align: center;
+            .hamburger__btn_close {
+                display: none;
+                color: #fff;
+                font-size: 58px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .hamburger__btn_close a {
+                text-decoration: none;
+            }
+            .hamburger__btn_close a:visited {
+                color: #fff;
+                text-decoration: none;
+            }
         }
     }
     .talking_about_fork__last_paraghraph {
@@ -105,6 +150,9 @@ sans-serif;
         font-family: $general_font;
         font-size: 24px;
         font-weight: 600;
+    }
+    .logo__text:hover {
+        color: white;
     }
     .header_fork_app {
         height: 833px;
@@ -210,6 +258,9 @@ sans-serif;
                 font-size: 24px;
                 font-weight: 600;
             }
+            .logo__text:hover {
+                color: white;
+            }
         }
         .menu {
             display: block;
@@ -230,6 +281,9 @@ sans-serif;
                     font-weight: 600;
                     color: #8d81ac;
                     text-decoration: none;
+                }
+                .menu_item:hover {
+                    color: white;
                 }
             }
         }
@@ -337,6 +391,9 @@ sans-serif;
                 font-size: 24px;
                 font-weight: 600;
             }
+            .logo__text:hover {
+                color: white;
+            }
         }
         .menu {
             display: block;
@@ -354,6 +411,9 @@ sans-serif;
                     font-weight: 600;
                     color: #8d81ac;
                     text-decoration: none;
+                }
+                .menu_item:hover {
+                    color: white;
                 }
             }
         }
@@ -472,6 +532,9 @@ sans-serif;
                     margin: auto 0px;
                     background: url(../img/header_logo_320.png) 100% 100% no-repeat;
                 }
+                .logo:hover {
+                    background: url(../img/header_logo_hover_320.png) 100% 100% no-repeat;
+                }
             }
         }
         .btn {
@@ -490,6 +553,10 @@ sans-serif;
                 font-family: $general_font;
                 font-size: 15px;
                 font-weight: 600;
+            }
+            .btn__item:hover {
+                background-color: white;
+                color: #8d81ac;
             }
         }
     }
@@ -529,6 +596,10 @@ sans-serif;
                 color: #fff;
                 font-family: $general_font;
                 font-weight: 600;
+            }
+            .revolutionary_button__item:hover {
+                background-color: #fff;
+                color: #8d81ac;
             }
             .revolutionary_button__trial_version {
                 color: #848e97;
