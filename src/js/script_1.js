@@ -15,6 +15,6 @@ btn_open.addEventListener('click', function() {
 btn_close.addEventListener("click", function() {
     menu.classList.remove('dropmenu');
     menu.classList.add('hidemenu');
-    btn_open.style.display = "block";
     btn_close.style.display = "none";
+    btn_open.style.display = "block";
 });
