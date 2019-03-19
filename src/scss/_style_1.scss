@@ -87,7 +87,7 @@ sans-serif;
     }
     .header_fork_app {
         height: 800px;
-        background: url(../img/header_background_480.png) 100% 100% no-repeat;
+        background: url("../img/header_background_480.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: center center;
         .header_fork_app__name {
@@ -122,7 +122,7 @@ sans-serif;
         width: 90%;
     }
     .talking_about_fork {
-        background: url(../img/talking_about_fork_background_480.png) 100% 100% no-repeat;
+        background: url("../img/talking_about_fork_background_480.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: top center;
         padding-bottom: 40px;
@@ -162,7 +162,7 @@ sans-serif;
     }
     .header_fork_app {
         height: 833px;
-        background: url(../img/header_background_480.png) 100% 100% no-repeat;
+        background: url("../img/header_background_480.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: center center;
         .header_fork_app__name {
@@ -198,7 +198,7 @@ sans-serif;
         width: 400px;
     }
     .talking_about_fork {
-        background: url(../img/talking_about_fork_background_480.png) 100% 100% no-repeat;
+        background: url("../img/talking_about_fork_background_480.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: top center;
         padding-bottom: 75px;
@@ -225,12 +225,12 @@ sans-serif;
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .header_fork_app {
         height: 800px;
-        background: url(../img/header_background_768.png) 100% 100% no-repeat;
+        background: url("../img/header_background_768.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: center center;
     }
     .talking_about_fork {
-        background: url(../img/talking_about_fork_background_768.png) 100% 100% no-repeat;
+        background: url("../img/talking_about_fork_background_768.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: top center;
     }
@@ -239,7 +239,7 @@ sans-serif;
 @media screen and (min-width: 769px) {
     .header_fork_app_wrap {
         height: 800px;
-        background: url(../img/header_background_1200.png) 100% 100% no-repeat;
+        background: url("../img/header_background_1200.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: center center;
         background-color: #27262a;
@@ -247,7 +247,7 @@ sans-serif;
         margin: 0;
     }
     .talking_about_fork_wrap {
-        background: url(../img/talking_about_fork_background_1200.png) 100% 100% no-repeat;
+        background: url("../img/talking_about_fork_background_1200.png") 100% 100% no-repeat;
         background-size: cover;
         background-position: top center;
         background-color: #4d3c4d;
@@ -575,10 +575,10 @@ sans-serif;
                     width: 45px;
                     height: 43px;
                     margin: auto 0px;
-                    background: url(../img/header_logo_320.png) 100% 100% no-repeat;
+                    background: url("../img/header_logo_320.png") 100% 100% no-repeat;
                 }
                 .logo:hover {
-                    background: url(../img/header_logo_hover_320.png) 100% 100% no-repeat;
+                    background: url("../img/header_logo_hover_320.png") 100% 100% no-repeat;
                 }
             }
         }
