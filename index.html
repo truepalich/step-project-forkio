@@ -14,67 +14,90 @@
 </head>
 
 <body>
-    <!-- Header Ruslan will work here...-->
+    <!--Header-->
     <header class="header">
-        <div class="logo">
-            <img src="./src/img/header_logo_320.png" alt="logo_forkio">
-        </div>
-
-        <p class="logo__text">FORKIO</p>
-
-        <menu class="menu">
-            <ul class="menu__list">
-                <li><a href="#" class="menu_item">Overview</a></li>
-                <li><a href="#" class="menu_item">About Fork</a></li>
-                <li><a href="#" class="menu_item">Bying Options</a></li>
-                <li><a href="#" class="menu_item">Support</a></li>
-            </ul>
-        </menu>
-
-        <div class="btn">
-            <button class="btn__item">Buy Now</button>
-        </div>
-        <div class="hamburger">
-            <a href="#">
-                <svg width="25" height="22">
+        <div class="header_wrap">
+            <div class="header_logo">
+                <a href="#" class="header_logo__link">
+                    <div class="logo"></div>
+                    <p class="logo__text">FORKIO</p>
+                </a>
+            </div>
+            <div class="btn">
+                <button class="btn__item">Buy Now</button>
+            </div>
+            <menu class="menu">
+                <ul class="menu__list">
+                    <li><a href="#" class="menu_item">Overview</a></li>
+                    <li><a href="#" class="menu_item">About Fork</a></li>
+                    <li><a href="#" class="menu_item">Bying Options</a></li>
+                    <li><a href="#" class="menu_item">Support</a></li>
+                </ul>
+            </menu>
+            <div class="hamburger">
+                <div class="hamburger__btn_open">
+                    <a href="#">
+                        <svg width="25" height="22">
                     <path d="M5,5 25,5" stroke="#fff" stroke-width="3"/>
                     <path d="M0,12 25,12" stroke="#fff" stroke-width="3"/>
                     <path d="M0,19 25,19" stroke="#fff" stroke-width="3"/>
                 </svg>
-            </a>
+                    </a>
+                </div>
+                <div class="hamburger__btn_close"><a href="#">&times;</a></div>
+            </div>
         </div>
     </header>
 
-    <!-- Intro section Ruslan will work here...-->
-    <section class="header_fork_app">
-        <h1 class="header_fork_app__name">Fork App</h1>
-        <p class="header_fork_app__text">A Real Gamechanger In The</p>
-        <p class="header_fork_app__text">World Of Web-Development</p>
-        <p class="header_fork_app__textForMac">V.2.8 FOR MAC AND WINDOWS</p>
+    <!--Revolutionary button section-->
+    <section class="header_fork_app_wrap">
+        <div class="header_fork_app">
+            <h1 class="header_fork_app__name">Fork App</h1>
+            <div class="header_fork_app__text">
+                <p>A Real Gamechanger In The World Of Web-Development</p>
+            </div>
+            <p class="header_fork_app__textForMac">V.2.8 FOR MAC AND WINDOWS</p>
+
+            <section class="revolutionary_button">
+                <button class="revolutionary_button__item">Download For Free Now</button>
+                <p class="revolutionary_button__trial_version">Unlimited 30-Days Trial Period</p>
+            </section>
+        </div>
     </section>
 
-    <section class="revolutionary_button">
-        <button class="revolutionary_button__item">Download For Free Now</button>
-        <p class="revolutionary_button__trial_version">Unlimited 30-Days Trial Period</p>
-    </section>
-
-    <!-- About section Ruslan will work here...-->
-    <section class="revolutionary_editor">
-        <h2 class="revolutionary_editor__name">revolutionary editor</h2>
-        <p class="revolutionary_editor__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
-        <div class="revolutionary_editor__icons">
-
-            <div style="width: 100px; height: 30px">
-                <span data-menu-button="">
+    <!-- Revolutionary editor section-->
+    <section class="revolutionary_editor_wrap">
+        <div class="revolutionary_editor">
+            <h2 class="revolutionary_editor__name">revolutionary editor</h2>
+            <p class="revolutionary_editor__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+            <div class="revolutionary_editor__icons">
+                <div class="icons">
+                    <div class="icon__sign">
                         <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path></svg>
-                        Watch
-                </span>
-            </div>
-            <div>
-                <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>Star
-            </div>
-            <div>
-                <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>                Fork
+                        <span class="sign__name">Watch</span>
+                    </div>
+                    <div class="icon__number">
+                        1,397
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="icon__sign">
+                        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path></svg>
+                        <span class="sign__name">Star</span>
+                    </div>
+                    <div class="icon__number">
+                        21,038
+                    </div>
+                </div>
+                <div class="icons">
+                    <div class="icon__sign">
+                        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"></path></svg>
+                        <span class="sign__name">Fork</span>
+                    </div>
+                    <div class="icon__number">
+                        4,391
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -197,40 +220,105 @@
         </div>
     </section>
 
-    <!-- Talking about section RUSLAN-->
-    <section class="talking_about_fork">
-        <h2 class="talking_about_fork__name">People Are Talking About Fork</h2>
-        <div class="talking_about_fork__logo_company">
-            <img src="./src/img/talking_about_fork_1_smashing_magazine_320.png" alt="logo smashing_magazine">
-        </div>
-        <p class="talking_about_fork__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
-        <div class="talking_about_fork__logo_company">
-            <img src="./src/img/talking_about_fork_2_codrops_320.png" alt="logo codrops">
-        </div>
-        <p class="talking_about_fork__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
-        <div class="talking_about_fork__logo_company">
-            <img src="./src/img/talking_about_fork_3_w_320.png" alt="logo w">
-        </div>
-        <p class="talking_about_fork__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
-        <div class="talking_about_fork__logo_company ">
-            <img src="./src/img/talking_about_fork_4_pixel_buddha_320.png" alt="logo pixel_buddha" />
-            <img src="./src/img/talking_about_fork_4_pixel_buddha_name_320.png" alt="logo name pixel_buddha">
+    <!--Talking about section-->
+    <section class="talking_about_fork_wrap">
+        <div class="talking_about_fork">
+            <h2 class="talking_about_fork__name">People Are Talking About Fork</h2>
+            <div class="talking_about__company">
+                <div class="talking_about_fork__logo_company">
+                    <img src="./dist/img/talking_about_fork_1_smashing_magazine_320.png" alt="logo smashing_magazine">
+                    <p class="talking_about_fork__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+                </div>
 
+                <div class="talking_about_fork__logo_company">
+                    <img src="./dist/img/talking_about_fork_2_codrops_320.png" alt="logo codrops">
+                    <p class="talking_about_fork__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+                </div>
+                <div class="talking_about_fork__logo_company">
+                    <img src="./dist/img/talking_about_fork_3_w_320.png" alt="logo w">
+                    <p class="talking_about_fork__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</p>
+                </div>
+                <div class="talking_about_fork__logo_company ">
+                    <img src="./dist/img/talking_about_fork_4_pixel_buddha_320.png" alt="logo pixel_buddha" />
+                    <img src="./dist/img/talking_about_fork_4_pixel_buddha_name_320.png" alt="logo name pixel_buddha">
+                    <p class="talking_about_fork__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+                </div>
+                <div class="talking_about_fork__logo_company">
+                    <img src="./dist/img/talking_about_fork_5_creative_bloq_320.png" alt="logo creative_bloq">
+                    <p class="talking_about_fork__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
+                </div>
+                <div class="talking_about_fork__logo_company ">
+                    <img src="./dist/img/talking_about_fork_6_tnw_320.png" alt="logo tnw">
+                    <p class="talking_about_fork__text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+                </div>
+            </div>
+            <div class="talking_about_fork__last_paraghraph">
+                <p class="last_paraghraph__text">
+                    Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus.
+                </p>
+            </div>
         </div>
-        <p class="talking_about_fork__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
-        <div class="talking_about_fork__logo_company">
-            <img src="./src/img/talking_about_fork_5_creative_bloq_320.png" alt="logo creative_bloq">
-        </div>
-        <p class="talking_about_fork__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</p>
-        <div class="talking_about_fork__logo_company">
-            <img src="./src/img/talking_about_fork_6_tnw_320.png" alt="logo tnw">
-        </div>
-        <p class="talking_about_fork__text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
     </section>
 
-    <!-- Subscription section RUSLAN -->
-    <section class="Fork Subscription Pricing">
-
+    <!--Fork pricing section-->
+    <section class="fork_pricing_wrap">
+        <div class="fork_pricing">
+            <h2 class="fork_pricing__name">Fork Subscription Pricing</h2>
+            <div class="plan_item__wrap">
+                <div class="fork_pricing__plan plan_entrerprice ">
+                    <div class="plan_item">
+                        <h3 class="plan_item__name">STUDENTS</h3>
+                    </div>
+                    <div class="plan_item__price">
+                        <h2 class="price__cost"><span class="price__sing_dol">$</span>29</h2>
+                        <p class="price__per_month">per month</p>
+                        <div class="price__line"></div>
+                        <p class="price__offer">Personal License</p>
+                        <button class="price__btn_purchase">PURCHASE</button>
+                    </div>
+                </div>
+                <div class="fork_pricing__plan plan_entrerprice ">
+                    <div class="plan_item">
+                        <h3 class="plan_item__name">PROFESSIONAL</h3>
+                    </div>
+                    <div class="plan_item__price">
+                        <h2 class="price__cost"><span class="price__sing_dol">$</span>59</h2>
+                        <p class="price__per_month">per month</p>
+                        <div class="price__line"></div>
+                        <p class="price__offer">Professional License</p>
+                        <p class="price__offer">Email Support</p>
+                        <button class="price__btn_purchase">PURCHASE</button>
+                    </div>
+                </div>
+                <div class="fork_pricing__plan fork_pricing__active">
+                    <div class="plan_item">
+                        <h3 class="plan_item__name">AGENCY</h3>
+                    </div>
+                    <div class="plan_item__price">
+                        <h2 class="price__cost"><span class="price__sing_dol">$</span>99</h2>
+                        <p class="price__per_month">per month</p>
+                        <div class="price__line"></div>
+                        <p class="price__offer">1-12 Team Members</p>
+                        <p class="price__offer">Phone Support</p>
+                        <button class="price__btn_purchase">PURCHASE</button>
+                    </div>
+                </div>
+                <div class="fork_pricing__plan plan_entrerprice">
+                    <div class="plan_item">
+                        <h3 class="plan_item__name">ENTERPRICE</h3>
+                    </div>
+                    <div class="plan_item__price">
+                        <h2 class="price__cost"><span class="price__sing_dol">$</span>159</h2>
+                        <p class="price__per_month">per month</p>
+                        <div class="price__line"></div>
+                        <p class="price__offer">Unlimited Team Members</p>
+                        <p class="price__offer">24/7 Phone Support</p>
+                        <button class="price__btn_purchase">PURCHASE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Callback section -->
